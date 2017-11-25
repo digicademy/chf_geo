@@ -1,0 +1,32 @@
+{
+    "name": "digicademy/chf_geo",
+    "type": "typo3-cms-extension",
+    "description": "Geo component of the Cultural Heritage Framework",
+    "homepage": "http://www.digitale-akademie.de",
+    "authors": [
+        {
+          "name": "Torsten Schrade",
+          "email": "Torsten.Schrade@adwmainz.de",
+          "role": "Developer",
+          "homepage": "http://www.adwmainz.de"
+        }
+    ],
+    "license": ["GPL-2.0+"],
+    "keywords": ["TYPO3", "History", "Digital Humanities"],
+    "support": {
+        "issues": "https://github.com/digicademy/chf_geo/issues"
+    },
+    "version": "0.1.0",
+    "require": {
+        "typo3/cms-core": ">=7.6.0 || <=7.6.99"
+    },
+    "replace": {
+        "chf_geo": "self.version",
+        "typo3-ter/chf_geo": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+          "Digicademy\\ChfGeo\\": "Classes/"
+        }
+    }
+}

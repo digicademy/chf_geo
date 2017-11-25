@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-23T21:22:39Z" product-name="chf_time">
+		<header/>
+		<body>
+
+			<!-- TOPONYM -->
+
+			<trans-unit id="tx_chfgeo_domain_model_toponym">
+				<source>Toponym</source>
+			</trans-unit>
+
+			<trans-unit id="tx_chfgeo_domain_model_toponym.parent">
+				<source>Parent</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_toponym.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_toponym.label">
+				<source>Label</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_toponym.featurecode">
+				<source>Featurecode</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_toponym.certainty">
+				<source>Certainty</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_toponym.historical">
+				<source>Historical</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_toponym.coordinates">
+				<source>Coordinates</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_parent.parent">
+				<source>Parent Toponym</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_toponym.statements">
+				<source>LOD Statements</source>
+			</trans-unit>
+
+			<!-- ADM1 -->
+
+			<trans-unit id="tx_chfgeo_domain_model_featurecode">
+				<source>Featurecode</source>
+			</trans-unit>
+
+			<trans-unit id="tx_chfgeo_domain_model_featurecode.code">
+				<source>Code</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_featurecode.description">
+				<source>Description</source>
+			</trans-unit>
+
+			<!-- ADM2 -->
+
+			<trans-unit id="tx_chfgeo_domain_model_coordinates">
+				<source>Coordinates</source>
+			</trans-unit>
+
+			<trans-unit id="tx_chfgeo_domain_model_coordinates.parent">
+				<source>Parent</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_coordinates.tablename">
+				<source>Tablename</source>
+			</trans-unit>
+
+			<trans-unit id="tx_chfgeo_domain_model_coordinates.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_chfgeo_domain_model_coordinates.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
