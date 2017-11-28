@@ -45,9 +45,12 @@ CREATE TABLE tx_chfgeo_domain_model_toponym (
     KEY pid (pid),
     KEY t3ver_oid (t3ver_oid,t3ver_wsid),
 
+    KEY name (name),
+    KEY label (label),
     KEY parent (parent),
     KEY coordinates (coordinates),
-    KEY featurecode (featurecode)
+    KEY featurecode (featurecode),
+    KEY statements (statements)
 
 ) ENGINE=MyISAM;
 
@@ -82,9 +85,11 @@ CREATE TABLE tx_chfgeo_domain_model_featurecode (
 
     PRIMARY KEY (uid),
     KEY pid (pid),
-    KEY t3ver_oid (t3ver_oid,t3ver_wsid)
+    KEY t3ver_oid (t3ver_oid,t3ver_wsid),
 
-) ENGINE=MyISAM;
+    KEY code (code)
+
+) ENGINE=InnoDB;
 
 CREATE TABLE tx_chfgeo_domain_model_coordinates (
 
@@ -123,5 +128,8 @@ CREATE TABLE tx_chfgeo_domain_model_coordinates (
     KEY language (l10n_parent,sys_language_uid),
 
     KEY parent (parent),
-    KEY tablename (tablename)
-);
+    KEY tablename (tablename),
+    KEY latitude (latitude),
+    KEY longitude (longitude)
+
+) ENGINE=InnoDB;
