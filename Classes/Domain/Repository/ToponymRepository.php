@@ -1,6 +1,6 @@
 <?php
 
-namespace Digicademy\ChfGeo\Domain\Model;
+namespace Digicademy\ChfGeo\Domain\Repository;
 
 /***************************************************************
  *  Copyright notice
@@ -26,69 +26,11 @@ namespace Digicademy\ChfGeo\Domain\Model;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
-class Featurecode extends AbstractEntity
+class ToponymRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
 
-    /**
-     * code
-     *
-     * @var \string
-     *
-     */
-    protected $code;
-
-    /**
-     * description
-     *
-     * @var \string
-     *
-     */
-    protected $description;
-
-    /**
-     * Sets the code
-     *
-     * @param \string $code
-     *
-     * @return void
-     */
-    public function setCode($code)
-    {
-        $this->code = $code;
-    }
-
-    /**
-     * Returns the code
-     *
-     * @return \string
-     */
-    public function getCode()
-    {
-        return $this->code;
-    }
-
-    /**
-     * Sets the description
-     *
-     * @param \string $description
-     *
-     * @return void
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-    }
-
-    /**
-     * Returns the description
-     *
-     * @return \string
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
+    protected $defaultOrderings = array('name' => QueryInterface::ORDER_ASCENDING);
 
 }

@@ -64,7 +64,7 @@ class Toponym extends AbstractEntity
     protected $historical;
 
     /**
-     * name
+     * featurecode
      *
      * @var \Digicademy\ChfGeo\Domain\Model\Featurecode $featurecode
      * @lazy
@@ -73,7 +73,7 @@ class Toponym extends AbstractEntity
     protected $featurecode;
 
     /**
-     * name
+     * coordinates
      *
      * @var \Digicademy\ChfGeo\Domain\Model\Coordinates $coordinates
      * @lazy
@@ -82,7 +82,7 @@ class Toponym extends AbstractEntity
     protected $coordinates;
 
     /**
-     * name
+     * toponym
      *
      * @var \Digicademy\ChfGeo\Domain\Model\Toponym $parent
      * @lazy
@@ -93,9 +93,9 @@ class Toponym extends AbstractEntity
     /**
      * Sets the name
      *
-     * @return void
+     * @param \string $name
      *
-     * @param $name
+     * @return void
      */
     public function setName($name)
     {
@@ -115,9 +115,9 @@ class Toponym extends AbstractEntity
     /**
      * Sets the label
      *
-     * @return void
+     * @param \string $label
      *
-     * @param $label
+     * @return void
      */
     public function setLabel($label)
     {
@@ -137,9 +137,9 @@ class Toponym extends AbstractEntity
     /**
      * Sets the certainty
      *
-     * @return void
+     * @param \integer $certainty
      *
-     * @param $certainty
+     * @return void
      */
     public function setCertainty($certainty)
     {
@@ -159,9 +159,9 @@ class Toponym extends AbstractEntity
     /**
      * Sets the historical
      *
-     * @return void
+     * @param \integer $historical
      *
-     * @param $historical
+     * @return void
      */
     public function setHistorical($historical)
     {
