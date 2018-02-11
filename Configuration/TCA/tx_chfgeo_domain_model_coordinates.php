@@ -43,7 +43,7 @@ return array(
                 sys_language_uid;;;;1-1-1,
                 l10n_parent,
                 l10n_diffsource,
-                hidden;;1,
+                hidden,
                 parent,
                 latitude,
                 longitude,

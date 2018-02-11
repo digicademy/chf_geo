@@ -7,7 +7,7 @@ return array(
     'ctrl' => array(
         'title' => 'LLL:EXT:chf_geo/Resources/Private/Language/locallang_db.xlf:tx_chfgeo_domain_model_featurecode',
         'label' => 'code',
-        'default_sortby' => 'ORDER BY parent',
+        'default_sortby' => 'ORDER BY code',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -30,7 +30,6 @@ return array(
             l10n_parent,
             l10n_diffsource,
             hidden,
-            parent,
             latitude,
             longitude,
         ',
@@ -41,10 +40,8 @@ return array(
                 sys_language_uid;;;;1-1-1,
                 l10n_parent,
                 l10n_diffsource,
-                hidden;;1,
-                parent,
-                latitude,
-                longitude,
+                hidden,
+                code,
             '
         ),
     ),
@@ -100,7 +97,7 @@ return array(
         ),
         'code' => array(
             'exclude' => 1,
-            'label' => 'LLL:EXT:chf_time/Resources/Private/Language/locallang_db.xlf:tx_chftime_domain_model_dateranges.code',
+            'label' => 'LLL:EXT:chf_geo/Resources/Private/Language/locallang_db.xlf:tx_chfgeo_domain_model_featurecode.code',
             'config' => array(
                 'type' => 'input',
                 'size' => 30,

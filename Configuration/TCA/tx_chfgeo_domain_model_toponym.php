@@ -36,7 +36,7 @@ return array(
             featurecode,
             historical,
             certainty,
-            coordinaes,
+            coordinates,
             statements
         ',
     ),
@@ -46,14 +46,14 @@ return array(
                 sys_language_uid;;;;1-1-1,
                 l10n_parent,
                 l10n_diffsource,
-                hidden;;1,
+                hidden,
                 parent,
                 name,
                 label,
                 featurecode,
                 historical,
                 certainty,
-                coordinaes,
+                coordinates,
                 statements
             '
         ),
