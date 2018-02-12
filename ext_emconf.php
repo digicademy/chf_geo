@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'Cultural Heritage Framework: Geo',
-    'description' => 'Geo component of the Cultural Heritage Framework',
+    'description' => 'Spatial component of the Cultural Heritage Framework',
     'category' => 'plugin',
     'author' => 'Torsten Schrade',
     'author_email' => 'Torsten.Schrade@adwmainz.de',
@@ -15,7 +15,9 @@ $EM_CONF[$_EXTKEY] = array(
     'version' => '0.1.0',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '7.6.0-7.6.99',
+            'typo3' => '7.6.0-8.7.99',
+            'chf_time' => '',
+            'vocabulary' => '',
         ),
         'conflicts' => array(),
         'suggests' => array(),

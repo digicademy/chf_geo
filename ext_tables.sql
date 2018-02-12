@@ -17,7 +17,7 @@ CREATE TABLE tx_chfgeo_domain_model_toponym (
     # tx_chfgeo_domain_model_toponym (1:1)
     parent int(11) unsigned DEFAULT '0' NOT NULL,
 
-    # tx_vocabulary_domain_model_subjects (m:n)
+    # tx_vocabulary_domain_model_statements (m:n)
     statements int(11) unsigned DEFAULT '0',
 
     tstamp int(11) unsigned DEFAULT '0' NOT NULL,
