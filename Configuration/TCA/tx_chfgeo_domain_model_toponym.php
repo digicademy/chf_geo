@@ -118,7 +118,7 @@ return array(
                     array('', '0'),
                 ),
                 'foreign_table' => 'tx_chfgeo_domain_model_toponym',
-                'foreign_table_where' => 'ORDER BY name',
+                'foreign_table_where' => 'AND tx_chfgeo_domain_model_toponym.pid IN (###PAGE_TSCONFIG_IDLIST###) ORDER BY name',
                 'minitems' => 0,
                 'maxitems' => 1,
             ),
@@ -156,13 +156,19 @@ return array(
                 'minitems' => 0,
                 'maxitems' => 1,
                 'wizards' => Array(
+                    'suggest' => array(
+                        'type' => 'suggest',
+                        'default' => array(
+                            'pidList' => '###PLACEHOLDER###',
+                        ),
+                    ),
                     'add' => Array(
                         'type' => 'script',
                         'title' => 'Add',
                         'icon' => 'actions-add',
                         'params' => Array(
                             'table' => 'tx_chfgeo_domain_model_featurecode',
-                            'pid' => '###PAGE_TSCONFIG_IDLIST###',
+                            'pid' => '###PAGE_TSCONFIG_ID###',
                             'setValue' => 'prepend'
                         ),
                         'module' => array(
@@ -237,6 +243,12 @@ return array(
                 'minitems' => 0,
                 'maxitems' => 9999,
                 'wizards' => array(
+                    'suggest' => array(
+                        'type' => 'suggest',
+                        'default' => array(
+                            'pidList' => '###PLACEHOLDER###',
+                        ),
+                    ),
                     'add' => Array(
                         'type' => 'popup',
                         'title' => 'Create new',

@@ -1,0 +1,27 @@
+TCEFORM {
+	tx_chfgeo_domain_model_toponym {
+
+		# pages with toponyms
+		parent.PAGE_TSCONFIG_IDLIST = 1
+
+		# pages with feature codes
+		featurecode.PAGE_TSCONFIG_IDLIST = 1
+		# page for feature codes created with new wizard
+		featurecode.PAGE_TSCONFIG_ID = 1
+		# pages for feature code suggest wizard
+		featurecode.suggest.default.pidList = 1
+
+		# page for LOD statements created with new wizard
+		statements.PAGE_TSCONFIG_ID = 1
+		# pages for LOD statements suggest wizard
+		statements.suggest.default.pidList = 1
+	}
+
+}
+
+# page defaults for new records
+TCAdefaults {
+	tx_chfgeo_domain_model_toponym.pid = 1
+	tx_chfgeo_domain_model_featurecode.pid = 1
+	tx_chfgeo_domain_model_coordinates.pid = 1
+}
