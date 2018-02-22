@@ -16,7 +16,6 @@ $EM_CONF[$_EXTKEY] = array(
     'constraints' => array(
         'depends' => array(
             'typo3' => '7.6.0-8.7.99',
-//          'chf_time' => '',
             'vocabulary' => '',
         ),
         'conflicts' => array(),
