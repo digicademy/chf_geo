@@ -10,11 +10,6 @@ TCEFORM {
 		featurecode.PAGE_TSCONFIG_ID = 1
 		# pages for feature code suggest wizard
 		featurecode.suggest.default.pidList = 1
-
-		# page for LOD statements created with new wizard
-		statements.PAGE_TSCONFIG_ID = 1
-		# pages for LOD statements suggest wizard
-		statements.suggest.default.pidList = 1
 	}
 
 }

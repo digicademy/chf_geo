@@ -34,9 +34,6 @@
 			<trans-unit id="tx_chfgeo_domain_model_parent.parent">
 				<source>Parent Toponym</source>
 			</trans-unit>
-			<trans-unit id="tx_chfgeo_domain_model_toponym.statements">
-				<source>LOD Statements</source>
-			</trans-unit>
 
 			<!-- ADM1 -->
 
