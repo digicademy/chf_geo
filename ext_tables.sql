@@ -42,8 +42,8 @@ CREATE TABLE tx_chfgeo_domain_model_toponym (
     KEY pid (pid),
     KEY t3ver_oid (t3ver_oid,t3ver_wsid),
 
-    KEY name (name),
-    KEY label (label),
+    KEY name (name(100)),
+    KEY label (label(100)),
     KEY parent (parent),
     KEY coordinates (coordinates),
     KEY featurecode (featurecode)
