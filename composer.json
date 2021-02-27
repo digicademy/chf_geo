@@ -18,10 +18,9 @@
     },
     "version": "0.1.0",
     "require": {
-        "typo3/cms-core": ">=7.6.0 || <=7.6.99"
+        "typo3/cms-core": ">=7.6.0 || <=8.7.99"
     },
     "replace": {
-        "chf_geo": "self.version",
         "typo3-ter/chf_geo": "self.version"
     },
     "autoload": {
