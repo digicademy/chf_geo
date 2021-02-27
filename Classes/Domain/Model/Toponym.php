@@ -67,7 +67,7 @@ class Toponym extends AbstractEntity
      * featurecode
      *
      * @var \Digicademy\ChfGeo\Domain\Model\Featurecode $featurecode
-     * @lazy
+     * @TYPO3\\CMS\\Extbase\\Annotation\\ORM\\Lazy
      *
      */
     protected $featurecode;
@@ -76,7 +76,7 @@ class Toponym extends AbstractEntity
      * coordinates
      *
      * @var \Digicademy\ChfGeo\Domain\Model\Coordinates $coordinates
-     * @lazy
+     * @TYPO3\\CMS\\Extbase\\Annotation\\ORM\\Lazy
      *
      */
     protected $coordinates;
@@ -85,7 +85,7 @@ class Toponym extends AbstractEntity
      * toponym
      *
      * @var \Digicademy\ChfGeo\Domain\Model\Toponym $parent
-     * @lazy
+     * @TYPO3\\CMS\\Extbase\\Annotation\\ORM\\Lazy
      *
      */
     protected $parent;

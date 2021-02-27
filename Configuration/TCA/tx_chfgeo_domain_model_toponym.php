@@ -22,7 +22,7 @@ return array(
             'disabled' => 'hidden',
         ),
         'searchFields' => 'name,label',
-        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('chf_geo') . 'Resources/Public/Icons/tx_chfgeo_domain_model_toponym.svg'
+        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('chf_geo') . 'Resources/Public/Icons/tx_chfgeo_domain_model_toponym.svg'
     ),
     'interface' => array(
         'showRecordFieldList' => '
