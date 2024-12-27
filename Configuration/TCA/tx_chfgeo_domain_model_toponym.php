@@ -8,7 +8,6 @@ return array(
         'default_sortby' => 'ORDER BY name',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'dividers2tabs' => true,
         'versioningWS' => 2,
         'versioning_followPages' => true,
@@ -19,23 +18,13 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
+        'security' => [
+            'ignorePageTypeRestriction' => true,
+        ],
         'searchFields' => 'name,label',
         'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('chf_geo') . 'Resources/Public/Icons/tx_chfgeo_domain_model_toponym.svg'
     ),
     'interface' => array(
-        'showRecordFieldList' => '
-            sys_language_uid,
-            l10n_parent,
-            l10n_diffsource,
-            hidden,
-            parent,
-            name,
-            label,
-            featurecode,
-            historical,
-            certainty,
-            coordinates
-        ',
     ),
     'types' => array(
         '1' => array(
@@ -62,27 +51,17 @@ return array(
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
             'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'special' => 'languages',
-                'items' => [
-                    [
-                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                        -1,
-                        'flags-multiple'
-                    ],
-                ],
-                'default' => 0,
+                'type' => 'language',
             ]
         ],
         'l10n_parent' => array(
             'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => 1,
-            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => array(
                 'type' => 'select',
+                'renderType' => 'selectSingle',
                 'items' => array(
-                    array('', 0),
+                    array('label' => '', 'value' => 0),
                 ),
                 'foreign_table' => 'tx_chfgeo_domain_model_toponym',
                 'foreign_table_where' => 'AND tx_chfgeo_domain_model_toponym.pid=###CURRENT_PID### AND tx_chfgeo_domain_model_toponym.sys_language_uid IN (-1,0)',
@@ -115,13 +94,12 @@ return array(
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => array (
-                    array('', '0'),
+                    array('label' => '', 'value' => '0'),
                 ),
                 'foreign_table' => 'tx_chfgeo_domain_model_toponym',
                 'foreign_table_where' => 'AND tx_chfgeo_domain_model_toponym.pid IN (###PAGE_TSCONFIG_IDLIST###) ORDER BY name',
                 'minitems' => 0,
                 'maxitems' => 1,
-                'eval' => 'int',
                 'default' => 0,
             ),
         ),
@@ -150,14 +128,13 @@ return array(
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => array(
-                    array('', 0),
+                    array('label' => '', 'value' => '0'),
                 ),
                 'foreign_table' => 'tx_chfgeo_domain_model_featurecode',
                 'foreign_table_where' => 'AND tx_chfgeo_domain_model_featurecode.pid IN (###PAGE_TSCONFIG_IDLIST###) ORDER BY tx_chfgeo_domain_model_featurecode.code',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
-                'eval' => 'int',
                 'default' => 0,
                 'wizards' => Array(
                     'suggest' => array(

@@ -16,9 +16,9 @@
     "support": {
         "issues": "https://github.com/digicademy/chf_geo/issues"
     },
-    "version": "0.2.0",
+    "version": "dev-12.4-compatibility",
     "require": {
-        "typo3/cms-core": "^12.4"
+        "typo3/cms-core": ">=12.4.0 || <=12.4.99"
     },
     "replace": {
         "typo3-ter/chf_geo": "self.version"
