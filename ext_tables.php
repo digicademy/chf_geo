@@ -10,32 +10,3 @@ defined('TYPO3') or die();
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
     <INCLUDE_TYPOSCRIPT: source="FILE:EXT:chf_geo/Configuration/TSConfig/setup.txt">
 ');
-
-// TABLE REGISTRATION
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-    'tx_chfgeo_domain_model_toponym',
-    'EXT:chf_geo/Resources/Private/Language/locallang_csh_tx_chfgeo_domain_model_toponym.xlf'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages(
-    'tx_chfgeo_domain_model_toponym'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-    'tx_chfgeo_domain_model_featurecode',
-    'EXT:chf_geo/Resources/Private/Language/locallang_csh_tx_chfgeo_domain_model_featurecode.xlf'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages(
-    'tx_chfgeo_domain_model_featurecode'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-    'tx_chfgeo_domain_model_coordinates',
-    'EXT:chf_geo/Resources/Private/Language/locallang_csh_tx_chfgeo_domain_model_coordinates.xlf'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages(
-    'tx_chfgeo_domain_model_coordinates'
-);

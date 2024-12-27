@@ -180,9 +180,8 @@ return array(
             'exclude' => 1,
             'label' => 'LLL:EXT:chf_geo/Resources/Private/Language/locallang_db.xlf:tx_chfgeo_domain_model_toponym.certainty',
             'config' => array(
-                'type' => 'input',
-                'size' => 5,
-                'eval' => 'trim,int'
+                'type' => 'number',
+                'size' => 5
             ),
         ),
         'coordinates' => array(
